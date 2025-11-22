@@ -27,11 +27,13 @@ export default function Calculator() {
         </h3>
         <Input
           title="Height (m)"
-          onWriting={(event) => heightHandler(event.target.value)}
+          value={userHeight}
+          onWriting={heightHandler}
         />
         <Input
           title="Weight (Kg)"
-          onWriting={(event) => weightHandler(event.target.value)}
+          value={userWeight}
+          onWriting={weightHandler}
         />
         <button
           onClick={clickHandler}
